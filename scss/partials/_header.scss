@@ -21,15 +21,17 @@ html {
   margin: 0;
 }
 
-header {
-    a {
+
+a {
         margin-left: 2%;
     }
-    a:hover, a:active { 
+
+a:hover, a:active a{ 
         color: #9f448c;
         text-decoration: none;
     }
-    h1 {
+
+h1 {
         font-size: 100px;
         padding: 38px;
         font-family: Existence-Light, sans-serif;
@@ -39,36 +41,39 @@ header {
             color: #9f448c;
         }
     }
-    h3 {
+
+h3 {
         font-size: 22px;
         font-weight: bold;
     }
-    h2 {
+
+h2 {
         font-size: 15px;
     }
-}
+
 
 .main-circles {
   margin-top: 9vh; 
   height: 36vh;
   display: flex;
   justify-content: center;
+    p {
+        color: white;
+    }
+}
     
-    .contact {
+.contact {
         align-items: flex-start; 
     }
     
-    .about, .contact {
+.about, .contact {
         margin-top: 10%;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: flex-end;
     }
-    p {
-        color: white;
-    } 
-}
+
 
 .circle {
   background: url("../images/circle.png");
@@ -78,7 +83,7 @@ header {
   background-size: cover;
   align-self: flex-end; 
 }
-
+ 
 .circle:hover {
   cursor: default;
   background: url("../images/circle-color.png");
